@@ -1,0 +1,78 @@
+.header-container{
+    display: flex;
+height: 90px;
+background: rgba(1, 66, 85, 0.7);
+align-items: center;
+    justify-content: center;
+}
+
+
+.nav-menu{
+    display: flex;
+}
+
+.nav-item{
+    margin: 0 54px;
+}
+
+.nav-text{
+    font-family: courier-prime,monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 28px;  
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.nav-text:hover{
+   color: rgb(240, 130, 1); 
+   cursor: pointer;
+}
+
+.main-body{
+    display: flex;
+    justify-content: center;
+    height: 835px;
+    background-image: url("../img/forest.webp");
+}
+
+.main-content{
+background: rgb(15, 43, 46);
+padding: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+height: fit-content;
+width: 85%;
+margin-top: 25px;
+}
+
+.text-header{
+    font-family: courier-prime,monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 67px;
+text-align: center;
+color: rgb(255, 255, 255);
+}
+
+.main-img{
+    display: block;
+    width: fit-content;
+    height: 425px;
+    margin: 50px auto;
+}
+
+.main-text{
+    font-family: courier-prime,monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 28px;
+text-align: center;
+color: rgb(255, 255, 255);
+}
