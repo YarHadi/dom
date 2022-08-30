@@ -35,12 +35,13 @@ align-items: center;
 .main-body{
     display: flex;
     justify-content: center;
-    height: 835px;
+    height: fit-content;
+    padding-bottom: 25px;
     background-image: url("../img/forest.webp");
 }
 
 .main-content{
-background: rgb(15, 43, 46);
+background: rgba(15, 43, 46, 0.8);
 padding: 50px;
 display: flex;
 flex-direction: column;
