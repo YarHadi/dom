@@ -9,10 +9,12 @@ align-items: center;
 
 .nav-menu{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-item{
-    margin: 0 54px;
+    margin: 10px 54px;
 }
 
 .nav-text{
@@ -47,8 +49,9 @@ display: flex;
 flex-direction: column;
 align-items: center;
 height: fit-content;
-width: 85%;
+width: 60em;
 margin-top: 25px;
+justify-content: center;
 }
 
 .text-header{
@@ -56,16 +59,15 @@ margin-top: 25px;
 font-style: normal;
 font-weight: 400;
 font-size: 60px;
-line-height: 67px;
 text-align: center;
+margin: 10px auto;
 color: rgb(255, 255, 255);
 }
 
 .main-img{
     display: block;
-    width: fit-content;
     height: 425px;
-    margin: 50px auto;
+    margin: 20px auto;
 }
 
 .main-text{
@@ -77,3 +79,66 @@ line-height: 28px;
 text-align: center;
 color: rgb(255, 255, 255);
 }
+
+@media screen and (max-width: 1100px) {
+
+    .header-container{
+    height: 70px;
+    }
+
+    .nav-text{
+        font-size: 20px;
+    }
+    .nav-item{
+        margin: 10px 20px;
+    }
+    
+    .text-header{
+        font-size: 40px;
+    }
+    
+    .main-content{
+        width: 80%;
+        padding: 25px;
+    }
+    
+    .main-img{
+        margin: 10px auto;
+    max-height: 300px;
+    }
+    
+    .main-text{
+        font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .header-container{
+        height: 50px;
+        }
+
+    .nav-text{
+        font-size: 10px;
+    }
+    .nav-item{
+        margin: 10px 15px;
+    }
+    
+    .text-header{
+        font-size: 20px;
+    }
+    
+    .main-content{
+        width: 80%;
+        padding: 20px;
+    }
+    
+    .main-img{
+        margin: 5px auto;
+    max-height: 200px;
+    }
+    
+    .main-text{
+        font-size: 10px;
+    }
+  }
