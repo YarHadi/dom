@@ -86,3 +86,4 @@ navMenu.addEventListener("click", onClick);
 //inner first page
 
 showContent(1, characters);
+
