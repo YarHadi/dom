@@ -1,5 +1,5 @@
 const characters = [
-  { Id: 1,
+  { id: 1,
         header: "Welcome to Kaer Morhen!",
     img: "./img/kaer.webp",
     text: "From there they could see the ruins of Kaer Morhen huddled against the stone precipices - the partially demolished trapezium of the defensive wall, the remains of the barbican and gate, the thick, blunt column of the donjon.",
@@ -31,8 +31,25 @@ const characters = [
     text: "Vesemir was the oldest and most experienced witcher at Kaer Morhen in the 13th century and acted as a father figure to Geralt and the other witchers. Like many of the other witchers, he spent each winter in the fortress and set out on the path when spring arrived. He was one of the few members of the School of the Wolf to survive the assault on Kaer Morhen. By the 1260s, he was the sole old witcher remaining; however, as he was only a fencing instructor, he didn't possess the knowledge necessary to create new mutagens in order to mutate more disciples into witchers.",
   }]
   
+  // creating buttons
+
+  const navMenu=document.querySelector('.nav-menu');
+
+  function createButtons(data){
+    const buttons=data.map(character =>  `<li class="nav-item">
+    <a class="nav-text" id="${character.id}"> ${character.header} </a>
+  </li>`).join("");  
+  navMenu.innerHTML= buttons;
+  }
+
+  createButtons(characters);
+
+
+
+
 
 // Creation of content
+
 const mainContainer=document.querySelector('.main-content');
 
 function showContent(){
