@@ -85,10 +85,8 @@ navMenu.addEventListener("click", onClick);
 
 //init first page
 
-const mainPage=characters[0];
-
 function initPage(){
-  const { header, img, text } = mainPage;
+  const [{ header, img, text }] = characters;
   showContent(header,img,text);
 }
 
